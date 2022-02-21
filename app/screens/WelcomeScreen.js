@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     logo: {
         width: 100,
         height: 100,
+        
     },
     logoContainer: {
         position: "absolute",
@@ -47,3 +48,5 @@ const styles = StyleSheet.create({
 })
 
 export default WelcomeScreen;
+
+// test
