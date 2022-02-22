@@ -1,4 +1,4 @@
-import {Image, ImageBackground, StyleSheet, Text, View} from "react-native";
+import {Image, ImageBackground, StyleSheet, Text, View, Button, Alert} from "react-native";
 
 function WelcomeScreen(props) {
     return (
@@ -9,8 +9,16 @@ function WelcomeScreen(props) {
            <View style={styles.logoContainer}>
            <Image style={styles.logo} source={require("../assets/logo-red.png")}/>
            <Text>Sell What you Want Here</Text>
+           <Button
+  title="Learn More"
+  color="#841584"
+  accessibilityLabel="Learn more about this purple button"
+  onPress={() => Alert.alert('Button with adjusted color pressed')}
+/>
+
            </View>
            <View style={styles.loginButton}></View>
+           <Text style={styles.loginText}>Login </Text>
            <View style={styles.registerButton}></View>
        </ImageBackground>
     );
@@ -21,6 +29,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "flex-end",
         alignItems: "center",
+    },
+    loginText: {
+        
     },
     loginButton: {
         width: '100%',
